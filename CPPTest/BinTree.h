@@ -1,5 +1,5 @@
 #pragma once
-//二叉树
+//二叉树,这里使用链式结构
 
 using BTPosition = struct TNode*;
 using BinTree = BTPosition;

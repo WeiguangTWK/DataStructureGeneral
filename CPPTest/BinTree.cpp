@@ -1,10 +1,11 @@
-﻿// CPPTest.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿//二叉树的链式实现
 
 #include<iostream>
 #include<string>
 #include<cstdlib>
 #include"BinTree.h"
+#include"Queue.h"   //这里需要将结合二叉树以及栈使用
+#include"Stack.h"
 using namespace std;
 
 void InorderTraversal(BinTree BT)     //中序遍历
@@ -35,6 +36,11 @@ void PostorderTraversal(BinTree BT)     //后序遍历
 		cout << BT->Data << endl;
 		InorderTraversal(BT->right);
 	}
+}
+
+void LevelOrderTravel(BinTree BT)      //层序遍历
+{
+
 }
 
 

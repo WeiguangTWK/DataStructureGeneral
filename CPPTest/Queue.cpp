@@ -36,3 +36,18 @@ bool IsQueueEmpty(Queue Q)
 {
 	return(Q->Front == Q->Rear);
 }
+
+char DeleteQueue(Queue Q)
+{
+	if (IsQueueEmpty(Q))
+	{
+		cout << "¶ÓÁÐ¿Õ£¡" << endl;
+		return ' ';
+	}
+	else
+	{
+		Q->Front = (Q->Front + 1) & Q->maxsize;
+		return Q->Data[Q->Front];
+	}
+}
+
