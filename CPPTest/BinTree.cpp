@@ -40,7 +40,11 @@ void PostorderTraversal(BinTree BT)     //后序遍历
 
 void LevelOrderTravel(BinTree BT)      //层序遍历
 {
+	Queue Q;
+	BinTree BT_2;
 
+	if (!BT) return;
+	Q = createqueue();
 }
 
 
