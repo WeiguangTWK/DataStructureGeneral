@@ -29,3 +29,4 @@ using Edge = PtrToENode;
 
 MGraph CreateGraph(int VertexNum);
 void InsertEdge(MGraph Graph, Edge E);
+MGraph BuildGraph();
