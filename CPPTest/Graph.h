@@ -3,7 +3,7 @@
 #define INFINITY 65535
 using Vertex = int;
 using WeightType = int;
-using DataType = char;
+using GraphDataType = char;
 
 
 //图节点的定义
@@ -13,7 +13,7 @@ struct GNode
 	int Nv; //顶点数
 	int Ne; //边数
 	WeightType G[MaxVertexNum][MaxVertexNum]; //邻接矩阵
-	DataType Data[MaxVertexNum]; //顶点数据
+	GraphDataType Data[MaxVertexNum]; //顶点数据
 };
 using MGraph = PtrToGNode;
 

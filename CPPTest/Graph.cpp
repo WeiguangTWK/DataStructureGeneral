@@ -52,7 +52,7 @@ MGraph BuildGraph()
 			for (i = 0; i < Graph->Ne; i++)
 			{
 				printf("输入第%d条边的两个端点", i);
-				scanf("%d%d%d", &E->V1, &E->V2, &E->Weight);
+				scanf_s("%d%d%d", &E->V1, &E->V2, &E->Weight);
 				InsertEdge(Graph, E);
 			}
 		}
@@ -60,7 +60,7 @@ MGraph BuildGraph()
 	for (V = 0; V < Graph->Nv; V++)
 	{
 		printf("输入第%d个顶点的数据：",V);
-		scanf("%c", &(Graph->Data[V]));
+		scanf_s("%c", &(Graph->Data[V]));
 	}
 	return Graph;
 }

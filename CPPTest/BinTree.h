@@ -6,8 +6,8 @@ using BinTree = BTPosition;
 struct TNode
 {
 	char Data;  //Êý¾Ý
-	BinTree Left;
-	BinTree right;
+	BinTree Left;   //×óÖ¦
+	BinTree right;  //ÓÒÖ¦
 };
 
 void InorderTraversal(BinTree BT);

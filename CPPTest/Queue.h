@@ -4,7 +4,7 @@ using PtrToQNode = struct QNode*;
 struct QNode
 {
 	char* Data;
-	QueuePosition Front, Rear;
+	QueuePosition Front, Rear; //队列的前位与后位
 	int maxsize;
 };
 using Queue = PtrToQNode;
