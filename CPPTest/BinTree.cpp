@@ -44,7 +44,7 @@ void LevelOrderTravel(BinTree BT)      //层序遍历
 	BinTree BT_2;
 
 	if (!BT) return;
-	Q = createqueue();
+	//Q = createqueue();
 }
 
 
